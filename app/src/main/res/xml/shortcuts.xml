@@ -13,4 +13,17 @@
     <categories android:name="android.shortcut.conversation" />
     <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
   </shortcut>
+  <shortcut
+    android:shortcutId="task"
+    android:enabled="true"
+    android:icon="@drawable/ic_xyn_libchecker"
+    android:shortcutShortLabel="@string/xyn_add_3"
+    android:shortcutLongLabel="@string/xyn_add_4">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetPackage="XiaoKitty.HyperOS.Class"
+      android:targetClass="app.TaskActivity" />
+    <categories android:name="android.shortcut.conversation" />
+    <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+  </shortcut>
 </shortcuts>

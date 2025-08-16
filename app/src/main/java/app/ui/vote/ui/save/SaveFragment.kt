@@ -427,7 +427,7 @@ companion object {
                   //  val output = Process.inputStream.bufferedReader().use { it.readText() }
                     val output = StringBuilder()
                     val maxOutputSize = 1024 * 1024 // 设置最大输出大小为 1MB
-                    val maxDisplayLength = 7000 // 设置最大显示字符数
+                    val maxDisplayLength = 10000 // 设置最大显示字符数
 
                 Process.inputStream.bufferedReader().use { reader ->
                     var line: String?

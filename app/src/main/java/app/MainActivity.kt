@@ -111,6 +111,10 @@ companion object {
         val kernelVersion = System.getProperty("os.version") ?: "N/A"
         val systemAbi = getSystemSupportCpuAbi()
         println(systemAbi) // 输出结果
+        val systemAbi64 = getSystemSupportCpuAbi64()
+        println(systemAbi64) // 输出结果
+        val systemAbi32 = getSystemSupportCpuAbi32()
+        println(systemAbi32) // 输出结果
         val minVersion = getMinSupportedTargetSdk()
         println(minVersion) // 输出结果
         val pageSizeString = getPageSizeInKB()
@@ -135,8 +139,8 @@ companion object {
         val androidSys14 = "硬件名称: ${Build.HARDWARE}"
         val androidSys15 = "构建主机: ${Build.HOST}"
         val androidSys16 = "基带版本: $radioVersion"
-        val androidSys17 = "ABI-32: ${Build.SUPPORTED_32_BIT_ABIS[0]}"
-        val androidSys18 = "ABI-64: ${Build.SUPPORTED_64_BIT_ABIS[0]}"
+        val androidSys17 = "ABI-32: $systemAbi32"
+        val androidSys18 = "ABI-64: $systemAbi64"
         val androidSysView: TextView = binding.appInfoMain.textView
         androidSysView.text = androidSys1 + "\n" + androidSys2 + "\n" + androidSys11 + "\n" + androidSys3 + "\n" + androidSys7 + "\n" + androidSys8 + "\n" + androidSys9 + "\n" + androidSys12 + "\n" + androidSys14 + "\n" + androidSys10 + "\n" + androidSys13 + "\n" + androidSys17 + "\n" + androidSys18
         
@@ -188,7 +192,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
         val iphone6 = "当前刷新率: $currentRefreshRate"
         val iphone7 = "屏幕刷新率: \n$refreshRateText"
         val androidIphoneView: TextView = binding.appInfoMain.textView2
-        androidIphoneView.text = iphone1 + "\n" + iphone2 + "\n" + iphone3 + "\n" + iphone4 + "\n" + iphone5 + "\n" + iphone6 + "\n" + iphone7
+        androidIphoneView.text = iphone1 + "\n" + iphone2 + "\n" + iphone3 + "\n" + iphone4 + "\n" + iphone5 + "\n" + iphone6 + "\n" + iphone7 
     }
     
     private fun getPageSizeInKB(): String {
@@ -231,12 +235,13 @@ fun getAspectRatio(context: Context): String {
     val aspectHeight = heightPixels / gcd
 
     return "$aspectHeight:$aspectWidth"
-}
+} 
 
 // 计算最大公约数的辅助函数
 fun gcd(a: Int, b: Int): Int {
     return if (b == 0) a else gcd(b, a % b)
 }
+
 
 fun getScreenSizeInInches(context: Context): Double {
     val metrics = context.resources.displayMetrics
@@ -247,7 +252,7 @@ fun getScreenSizeInInches(context: Context): Double {
 
     // 使用勾股定理计算屏幕对角线长度
     return sqrt(widthInInches * widthInInches + heightInInches * heightInInches).toDouble()
-}
+} 
 
     fun getScreenDensity(context: Context): Float {
        val metrics = context.resources.displayMetrics
@@ -284,7 +289,7 @@ fun getScreenSizeInInches(context: Context): Double {
 
     // 去重并返回
     return refreshRates.distinct()
-}
+} 
 
  fun getMinSupportedTargetSdk(): String {
     return try {
@@ -292,7 +297,7 @@ fun getScreenSizeInInches(context: Context): Double {
         val get = properties.getMethod("get", String::class.java)
         get.invoke(properties, "ro.build.version.min_supported_target_sdk") as String
     } catch (e: Exception) {
-        "无法获取" // 处理异常
+        "N/A" // 处理异常
     }
 }
 
@@ -302,7 +307,27 @@ fun getScreenSizeInInches(context: Context): Double {
         val get = properties.getMethod("get", String::class.java)
         get.invoke(properties, "ro.system.product.cpu.abilist") as String
     } catch (e: Exception) {
-        "无法获取" // 处理异常
+        "N/A" // 处理异常
+    }
+}
+
+  fun getSystemSupportCpuAbi64(): String {
+    return try {
+        val properties = Class.forName("android.os.SystemProperties")
+        val get = properties.getMethod("get", String::class.java)
+        get.invoke(properties, "ro.system.product.cpu.abilist64") as String
+    } catch (e: Exception) {
+        "N/A" // 处理异常
+    }
+}
+
+  fun getSystemSupportCpuAbi32(): String {
+    return try {
+        val properties = Class.forName("android.os.SystemProperties")
+        val get = properties.getMethod("get", String::class.java)
+        get.invoke(properties, "ro.system.product.cpu.abilist32") as String
+    } catch (e: Exception) {
+        "N/A" // 处理异常
     }
 }
     

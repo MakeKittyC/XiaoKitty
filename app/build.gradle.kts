@@ -37,8 +37,8 @@ android {
         applicationId = "XiaoKitty.HyperOS.Class"
         minSdk = 27
         targetSdk = 35
-        versionCode = 91
-        versionName = "v0.13.8-202508"
+        versionCode = 93
+        versionName = "v0.14.1-202508"
         
         buildConfigField("int", "TARGET_SDK_VERSION", targetSdk.toString())
         buildConfigField("int", "MIN_SDK_VERSION", minSdk.toString())
