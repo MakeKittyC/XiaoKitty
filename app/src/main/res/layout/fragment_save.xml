@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/task_item_background"
+     android:backgroundTint="@color/com_app_s"
+     android:id="@+id/nested_ScrollView"
+     tools:context="app.ui.vote.ui.save.SaveFragment" >
+    
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/linear_Layout1"
+         android:gravity="top"
+         android:paddingTop="3dp"
+         android:paddingEnd="5dp"
+         android:paddingStart="5dp"
+         android:orientation="vertical">
+
+   <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/linear_Layout2"
+         android:gravity="center"
+         android:orientation="vertical">
+
+  <androidx.cardview.widget.CardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/androidx_CardView1"
+         android:clickable="true"
+         android:foreground="?selectableItemBackground"
+         android:backgroundTint="@color/task_save_card"
+         app:cardCornerRadius="8dp"
+         app:cardElevation="4dp"
+         app:cardUseCompatPadding="true">
+
+       <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:id="@+id/linear_Layout3"
+             android:paddingTop="7dp"
+             android:paddingEnd="13dp"
+             android:paddingStart="13dp"
+             android:paddingBottom="7dp"
+             android:gravity="center"
+             android:orientation="vertical">
+
+        <TextView
+             android:text="Android Shell命令执行器"
+             android:textSize="23sp"
+             android:textColor="@color/task_save_view"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content" />
+                    
+        <TextView
+             android:text="@string/fragment_save_2"
+             android:id="@+id/rulsuTextView"
+             android:textSize="23sp"
+             android:textColor="@color/task_save_view"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content" />
+             
+        <TextView
+             android:text="@string/fragment_save_3"
+             android:textSize="11sp"
+             android:textColor="@color/task_save_view"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content" />
+                        
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/linear_Layout4"
+         android:layout_marginTop="3dp"
+         android:orientation="horizontal">
+                            
+      <TextView
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content"
+            android:textColor="@color/task_save_view"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="26sp"
+            android:text="Shell:" />
+
+  <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:backgroundTint="@color/lxyn_activity_seekbar_a"
+       android:textColorHint="@color/lxyn_activity_seekbar_a"
+       android:hint="执行之前应检查其中是否包含恶意命令">
+       
+      <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="7dp"
+           android:backgroundTint="@color/task_save_edit"
+           android:textColor="@color/task_save_text"
+           android:id="@+id/command_EditText"
+           android:maxLines="1"
+           android:singleLine="true"
+           android:scrollHorizontally="true" />
+           
+</com.google.android.material.textfield.TextInputLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/linear_Layout5"
+         android:layout_marginTop="5dp"
+         android:gravity="center"
+         android:orientation="horizontal">
+
+       <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@color/task_save_button"
+          android:textColor="@color/task_save_text"
+          android:layout_marginEnd="7dp"
+          android:id="@+id/execute_Button"
+          android:text="ProcessBuilder" />
+                        
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@color/task_save_button"
+          android:textColor="@color/task_save_text"
+          android:id="@+id/exec_Button"
+          android:layout_marginStart="4dp"
+          android:text="Runtime-exec" />
+          
+      </LinearLayout>
+                        
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+        
+     <TextView
+         android:id="@+id/resultTextView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="13dp"
+         android:layout_marginBottom="70dp"
+         android:longClickable="true"
+         android:autoLink="web"
+         android:textColor="@color/task_save_text"
+         android:textIsSelectable="true"
+         android:textSize="16sp" />
+    
+ </LinearLayout>
+     
+</androidx.core.widget.NestedScrollView>

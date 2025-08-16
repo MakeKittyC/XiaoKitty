@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/task_item_background"
+     android:backgroundTint="@color/com_app_s"
+     android:id="@+id/androidx_NestedScrollView"
+     tools:context="app.ui.fast.FastFragment" >
+    
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="top"
+         android:layout_marginEnd="5dp"
+         android:layout_marginStart="5dp"
+         android:paddingTop="40dp"
+         android:paddingEnd="5dp"
+         android:paddingStart="5dp"
+         android:paddingBottom="50dp"
+         android:orientation="vertical">
+
+      <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="vertical">
+            
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/targetSdk_Version"
+            android:layout_marginEnd="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/minSdk_Version"
+            android:layout_marginEnd="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:textSize="17sp"
+            android:id="@+id/compileSdk_Version"
+            android:layout_marginEnd="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/version_Code"
+            android:layout_marginEnd="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/version_Name"
+            android:layout_marginEnd="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/application_Id"
+            android:layout_marginEnd="11sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/build_Type"
+            android:layout_marginEnd="18sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/androidx_Version"
+            android:layout_marginEnd="1sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/androidx_Kernel"
+            android:layout_marginEnd="1sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/androidx_System"
+            android:layout_marginEnd="1sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/androidx_Device"
+            android:layout_marginEnd="11sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/androidx_Sys"
+            android:layout_marginEnd="11sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+         <TextView
+            android:textSize="17sp"
+            android:id="@+id/androidx_Uidpid"
+            android:layout_marginEnd="18sp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+            
+    </LinearLayout>
+    
+  </LinearLayout>
+     
+</androidx.core.widget.NestedScrollView>

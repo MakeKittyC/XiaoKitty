@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="top"
+         android:paddingTop="44dp"
+         android:paddingEnd="3dp"
+         android:paddingStart="11dp"
+         android:paddingBottom="3dp"
+         android:orientation="vertical">
+
+   <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+            
+        <ImageView
+            app:srcCompat="@mipmap/image_003"
+            android:layout_marginEnd="23sp"
+            android:layout_marginStart="3sp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circular_background"
+            android:clipToOutline="true"
+            android:layout_height="72dp"
+            android:layout_width="72dp" />
+                
+        <TextView
+            android:id="@+id/textView_kts"
+            android:textSize="17sp"
+            android:textIsSelectable="true"
+            android:longClickable="true"
+            android:layout_marginEnd="18sp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+            
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_Device"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_Android"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        
+        <TextView
+            android:id="@+id/textView_AndroidId"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        
+        <TextView
+            android:id="@+id/textView_systemArchitecture"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        
+        <TextView
+            android:id="@+id/textView_Host"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_System"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_Kernel"
+            android:textSize="17sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+            
+        <TextView
+            android:text="implementation Libs"
+            android:textSize="23sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        
+        <TextView
+            android:id="@+id/textView_libs"
+            android:textSize="18sp"
+            android:textIsSelectable="true"
+            android:longClickable="true"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    
+  </LinearLayout>
+  
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name" translatable="false">XiaoKitty</string>
+<string name="app_activity_name">XiaoKitty</string>
+<string name="app_app_name">XiaoKitty</string>
+<string name="app_activity_image">调试入口</string>
+<string name="task_just_view1">查看</string>
+<string name="task_just_view2">删除文件</string>
+<string name="title_fragment_valo">实验室</string>
+<string name="title_fragment_task">特殊空间</string>
+<string name="title_fragment_save">小终端</string>
+<string name="title_fragment_vote">Task</string>
+<string name="title_fragment_just">文件树</string>
+<string name="title_fragment_fast">用户中心</string>
+<string name="action_task_1">跳转到其他界面</string>
+<string name="action_task_2">启动调试服务(建议关闭电池优化)</string>
+<string name="action_task_3">停止调试服务(建议仅在不需要时)</string>
+<string name="action_task_4">关于我们(架构/混淆/签名校验)</string>
+<string name="action_task_5">Su设置刷新率(需要root权限)</string>
+<string name="action_task_6">关闭程序(确保只在不需要时关闭)</string>
+<string name="action_image_1">无需多言</string>
+<string name="action_image_2">开发进度</string>
+<string name="xyn_add_1">次活动</string>
+<string name="xyn_add_2">MainActivity</string>
+<string name="fragment_save_1">这不是终端，别太离谱，能用就用，用的Android原生exec方法实现的，默认工作目录是/sdcard/目录</string>
+<string name="fragment_save_2">点击授权应用已声明的相关权限</string>
+<string name="fragment_save_3">·对于依赖shell终端的用户, 还请移步至Termux\n·完整命令会输出至缓存目录下的log文件：[时间戳.log]\n·ProcessBuilder：/data/user/0/XiaoKitty.HyperOS.Class/cache/Log/process/ \n·Runtime-exec：/data/user/0/XiaoKitty.HyperOS.Class/cache/Log/exec/ \n·Toast配置文件: /data/user/0/XiaoKitty.HyperOS.Class/files/home/rules.json</string>
+<string name="file_icon">File icon</string>
+</resources>

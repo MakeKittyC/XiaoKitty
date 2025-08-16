@@ -1,0 +1,11 @@
+[
+   {
+         "KernelSU": 0,
+         "Magisk": 1,
+         "Shizuku": 2
+   }
+]
+
+[  { "su": 0, "system": 1000, "adb":1011, "shell":2000}  ]
+[  { "chmod": [ "711", "https://schemas.android.com/apk/fix/uses-termux-permission.sh" ] }  ]
+[  { "chmod": [ "711", "https://schemas.android.com/apk/fix/user-root-permission.sh" ] }  ]

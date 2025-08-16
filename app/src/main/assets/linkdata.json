@@ -1,0 +1,882 @@
+[
+    {
+        "name": "Cosplay",
+        "link": "https://cosplaytele.com/"
+    },
+    {
+        "name": "Maven仓库",
+        "link": "https://maven.google.com/web/m_index.html"
+    },
+    {
+        "name": "https://central.sonatype.com/", 
+        "link": "https://mvnrepository.com/"
+    },
+    {
+        "name": "海外apk下载", 
+        "link": "https://www.apkmirror.com/"
+    },
+    {
+        "name": "https://apkcombo.com/", 
+        "link": "漫画地址"
+    },
+    {
+        "name": "https://nhentai.net/", 
+        "link": "X官网"
+    },
+    {
+        "name": "https://x.com/", 
+        "link": "蓝鲨官网"
+    },
+    {
+        "name": "https://www.lsapk.com/", 
+        "link": "https://www.lan-sha.com/"
+    },
+    {
+        "name": "谷歌浏览器官网", 
+        "link": "https://Chrome.com/"
+    },
+    {
+        "name": "Android官网", 
+        "link": "https://Android.com/"
+    },
+    {
+        "name": "谷歌", 
+        "link": "https://Google.com/"
+    },
+    {
+        "name": "安心加速器官网", 
+        "link": "https://www.axjsq.com/"
+    },
+    {
+        "name": "Telegram官网", 
+        "link": "https://telegram.org/"
+    },
+    {
+        "name": "https://telegram.org/k", 
+        "link": "https://web.telegram.org/"
+    },
+    {
+        "name": "Mt管理器官网", 
+        "link": "https://mt2.cn/"
+    },
+    {
+        "name": "奇异社区", 
+        "link": "https://qiyi.ee/"
+    },
+    {
+         "name": "QQ官网", 
+         "link": "https://im.qq.com/immobile/index.html?_wv=1025/"
+    },
+    {
+         "name": "微信官网", 
+         "link": "https://weixin.qq.com/"
+    },
+    {
+         "name": "原神官网", 
+         "link": "https://ys.mihoyo.com/"
+    },
+    {
+         "name": "元梦之星官网", 
+         "link": "https://ymzx.qq.com/"
+    },
+    {
+         "name": "王者荣耀官网", 
+         "link": "https://pvp.qq.com/"
+    },
+    {
+         "name": "百度", 
+         "link": "https://Baidu.com/"
+    },
+    {
+         "name": "Linux内核官网", 
+         "link": "https://kernel.org/"
+    },
+    {
+         "name": "Linux4.x内核", 
+         "link": "https://cdn.kernel.org/pub/linux/kernel/v4.x/"
+    },
+    {
+         "name": "Svg转png", 
+         "link": "https://svgtopng.com/zh/"
+    },
+    {
+         "name": "图片转Svg", 
+         "link": "https://www.autotracer.org/zh.html"
+    },
+    {
+         "name": "多种文件格式转换", 
+         "link": "https://cdkm.com/cn/"
+    },
+    {
+         "name": "kgm转mp3", 
+         "link": "https://kgm.worthsee.com/"
+    },
+    {
+         "name": "多种云音乐格式文件转mp3",
+         "link": "https://openyyy.com/"
+    },
+    {
+         "name": "pdf转png", 
+         "link": "https://pdf2png.com/zh/"
+    },
+    {
+         "name": "多种文件格式转换", 
+         "link": "https://convertio.co/zh/"
+    },
+    {
+         "name": "ChatGPT", 
+         "link": "https://chatcat.zhaoyoung.me/"
+    },
+    {
+         "name": "微信公众平台", 
+         "link": "https://mp.weixin.qq.com/"
+    },
+    {
+         "name": "腾讯开放平台", 
+         "link": "https://open.tencent.com/"
+    },
+    {
+         "name": "7-zip官网", 
+         "link": "https://sparanoid.com/lab/7z/"
+    },
+    {
+         "name": "小米云服务官网", 
+         "link": "https://i.mi.com/"
+    },
+    {
+         "name": "Android 无障碍套件", 
+         "link": "https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback"
+    },
+    {
+         "name": "Google Play Service", 
+         "link": "https://play.google.com/store/apps/details?id=com.google.android.gms"
+    },
+    {
+         "name": "Android System WebView", 
+         "link": "https://play.google.com/store/apps/details?id=com.google.android.webview"
+    },
+    {
+         "name": "Chrome", 
+         "link": "https://play.google.com/store/apps/details?id=com.android.chrome"
+    },
+    {
+         "name": "Chrome beta", 
+         "link": "https://play.google.com/store/apps/details?id=com.chrome.beta"
+    },
+    {
+         "name": "QQ", 
+         "link": "https://play.google.com/store/apps/details?id=com.tencent.mobileqq"
+    },
+    {
+         "name": "微信", 
+         "link": "https://play.google.com/store/apps/details?id=com.tencent.mm"
+    },
+    {
+         "name": "Gboard", 
+         "link": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin"
+    },
+    {
+         "name": "微博", 
+         "link": "https://play.google.com/store/apps/details?id=com.sina.weibo"
+    },
+    {
+         "name": "支付宝", 
+         "link": "https://play.google.com/store/apps/details?id=com.eg.android.AlipayGphone"
+    },
+    {
+         "name": "Poe", 
+         "link": "https://play.google.com/store/apps/details?id=com.poe.android"
+    },
+    {
+         "name": "Telegram", 
+         "link": "https://play.google.com/store/apps/details?id=org.telegram.messenger"
+    },
+    {
+         "name": "Nekogram", 
+         "link": "https://play.google.com/store/apps/details?id=tw.nekomimi.nekogram"
+    },
+    {
+         "name": "Twitter（X）", 
+         "link": "https://play.google.com/store/apps/details?id=com.twitter.android"
+    },
+    {
+         "name": "TwiMate下载器", 
+         "link": "https://play.google.com/store/apps/details?id=twimate.tweetdownloader.savetwittergif.twittervideodownloader"
+    },
+    {
+         "name": "Libchecker", 
+         "link": "https://play.google.com/store/apps/details?id=com.absinthe.libchecker"
+    },
+    {
+         "name": "Authenticator", 
+         "link": "https://play.google.com/store/apps/details?id=com.azure.authenticator"
+    },
+    {
+         "name": "原子加速器", 
+         "link": "https://play.google.com/store/apps/details?id=net.lab.flying"
+    },
+    {
+         "name": "海鸥加速器", 
+         "link": "https://play.google.com/store/apps/details?id=tool.seagull.v"
+    },
+    {
+         "name": "起飞 Vpn", 
+         "link": "https://play.google.com/store/apps/details?id=com.ambrose.overwall"
+    },
+    {
+         "name": "Clover Vpn", 
+         "link": "https://play.google.com/store/apps/details?id=com.ys.clover.vpn"
+    },
+    {
+         "name": "小火箭加速器", 
+         "link": "https://play.google.com/store/apps/details?id=rocket.service.super"
+    },
+    {
+         "name": "中文(简体)-枫叶", 
+         "link": "https://t.me/setlanguage/fengcs"
+    },
+    {
+         "name": "中文(简体)-聪聪", 
+         "link": "https://t.me/setlanguage/zhcncc"
+    },
+    {
+         "name": "中文(简体)-@zh_CN", 
+         "link": "https://t.me/setlanguage/classic-zh-cn"
+    },
+    {
+         "name": "中文(简体)-简体", 
+         "link": "https://t.me/setlanguage/classic-zh"
+    },
+    {
+         "name": "中文(简体)-langCN", 
+         "link": "https://t.me/setlanguage/zhlangcn"
+    },
+    {
+         "name": "中文(简体)-zh-hans", 
+         "link": "https://t.me/setlanguage/zh-hans-beta"
+    },
+    {
+         "name": "中文(简体)-瓜体", 
+         "link": "https://t.me/setlanguage/duang-zh-cn"
+    },
+    {
+         "name": "中文(简体)-小哇🐸花里胡哨", 
+         "link": "https://t.me/setlanguage/qingwa"
+    },
+    {
+         "name": "中文(简体)-爱吃辣条的小学生", 
+         "link": "https://t.me/setlanguage/xiaowa"
+    },
+    {
+         "name": "中文(简体)-江湖中文版", 
+         "link": "https://t.me/setlanguage/jianghu"
+    },
+    {
+         "name": "中文(简体)-@cnmoe", 
+         "link": "https://t.me/setlanguage/moecn"
+    },
+    {
+         "name": "中文(简体)-", 
+         "link": "https://t.me/setlanguage/cnsimplified"
+    },
+    {
+         "name": "中文(简体)-@MiaoCN", 
+         "link": "https://t.me/setlanguage/meowcn"
+    },
+    {
+         "name": "中文(简体)-简体字", 
+         "link": "https://t.me/setlanguage/jiantizi"
+    },
+    {
+         "name": "中文(香港)-繁体1", 
+         "link": "https://t.me/setlanguage/hongkong"
+    },
+    {
+         "name": "中文(香港)-繁体2", 
+         "link": "https://t.me/setlanguage/zhhant-hk"
+    },
+    {
+         "name": "中文(香港)-繁体3", 
+         "link": "https://t.me/setlanguage/zh-hant-raw"
+    },
+    {
+         "name": "中文(香港)-人口语", 
+         "link": "https://t.me/setlanguage/hongkonger"
+    },
+    {
+         "name": "中文(香港)-广东话1", 
+         "link": "https://t.me/setlanguage/zhhkpb1"
+    },
+    {
+         "name": "中文(香港)-广东话2", 
+         "link": "https://t.me/setlanguage/hkcantonese"
+    },
+    {
+         "name": "中文(香港)-廣東話", 
+         "link": "https://t.me/setlanguage/cantonese"
+    },
+    {
+         "name": "中文(香港)-郭桓桓", 
+         "link": "https://t.me/setlanguage/zhong-taiwan-traditional"
+    },
+    {
+         "name": "中文(台灣)-正体", 
+         "link": "https://t.me/setlanguage/taiwan"
+    },
+    {
+         "name": "中文(台灣)-繁体", 
+         "link": "https://t.me/setlanguage/zh-hant-beta"
+    },
+    {
+         "name": "中文(台灣)-繁体", 
+         "link": "https://t.me/setlanguage/chinese-ancient"
+    },
+    {
+         "name": "中文(台灣)-文言", 
+         "link": "https://t.me/setlanguage/chinese-literary"
+    },
+    {
+         "name": "中文(台灣)-魔法師", 
+         "link": "https://t.me/setlanguage/encha"
+    },
+    {
+         "name": "日文", 
+         "link": "https://t.me/setlanguage/ja-beta"
+    },
+    {
+         "name": "二次元NSFW", 
+         "link": "https://t.me/YunRan1314"
+    },
+    {
+        "name": "Cosplay",
+        "link": "https://t.me/cosplaytele1"
+    },
+    {
+        "name": "https://t.me/cosplaytele2",
+        "link": "https://t.me/cosplaytelechat"
+    },
+    {
+        "name": "https://t.me/cosplaykkk",
+        "link": "https://t.me/+Sh4zTRQGnL5hZjVl"
+    },
+    {
+         "name": "Cosplay写真", 
+         "link": "https://t.me/souyuanf"
+    },
+    {
+         "name": "https://t.me/Coserfuliji", 
+         "link": "https://t.me/llsnfljxs"
+    },
+    {
+         "name": "https://t.me/ch1dan", 
+         "link": "--"
+    },
+    {
+        "name": "露出的一万种方式",
+        "link": "https://t.me/luchu100"
+    },
+    {
+        "name": "每日大赛",
+        "link": "https://t.me/dailyconteset"
+    },
+    {
+        "name": "斗屌场",
+        "link": "https://t.me/rxboy"
+    },
+    {
+         "name": "QQ模块专区", 
+         "link": "https://t.me/QToolCI"
+    },
+    {
+         "name": "https://t.me/WAuxiliary", 
+         "link": "https://t.me/Hd_WAuxiliary_CI"
+    },
+    {
+         "name": "https://t.me/QAuxiliary_CI", 
+         "link": "https://t.me/TSBattery_CI"
+    },
+    {
+         "name": "https://t.me/XAutoDaily", 
+         "link": "https://t.me/QAuxiliary"
+    },
+    {
+         "name": "https://t.me/lei_group", 
+         "link": "https://t.me/lei_Serendipity"
+    },
+    {
+         "name": "https://t.me/fk_zhang", 
+         "link": "https://t.me/WhenFlowersAreInBloom"
+    },
+    {
+         "name": "https://t.me/QNotified", 
+         "link": "https://t.me/QQRepeater_Xposed"
+    },
+    {
+         "name": "QQ版本合集", 
+         "link": "https://t.me/qq_updatelog"
+    },
+    {
+         "name": "HyperCeiler", 
+         "link": "https://t.me/cemiuiler_release"
+    },
+    {
+         "name": "https://t.me/cemiuiler", 
+         "link": "https://t.me/cemiuiler_canary"
+    },
+    {
+         "name": "LuckyTool", 
+         "link": "https://t.me/LuckyTool"
+    },
+    {
+         "name": "HookVip", 
+         "link": "https://t.me/HookVipCl"
+    },
+    {
+         "name": "https://t.me/WeChatJava", 
+         "link": "https://t.me/HookVipChat"
+    },
+    {
+         "name": "闰二月", 
+         "link": "https://t.me/leapfebruary"
+    },
+    {
+         "name": "MIUI / HyperOS更新推送", 
+         "link": "https://t.me/VoyagerMIUIUpdate"
+    },
+    {
+         "name": "Apktool_M", 
+         "link": "https://t.me/apktool_m"
+    },
+    {
+         "name": "ReVanced", 
+         "link": "https://t.me/revanced_extended_repo"
+    },
+    {
+         "name": "Tiktok插件", 
+         "link": "https://t.me/TikTokModCloud"
+    },
+    {
+         "name": "https://t.me/TikTokModChatCN/", 
+         "link": "Telegram"
+    },
+    {
+         "name": "https://t.me/TAndroidAPK", 
+         "link": "https://t.me/TelegramTips"
+    },
+    {
+         "name": "https://t.me/betainfo", 
+         "link": "https://t.me/tginfo"
+    },
+    {
+         "name": "Magisk alpha", 
+         "link": "https://t.me/magiskalpha"
+    },
+    {
+         "name": "Nekogram", 
+         "link": "https://t.me/NekogramAPKs"
+    },
+    {
+         "name": "https://t.me/NekoUpdates", 
+         "link": "-------"
+    },
+    {
+         "name": "百宝箱 | 破解专区", 
+         "link": "https://t.me/lan_sha_com"
+    },
+    {
+         "name": "https://t.me/ddddffxxr", 
+         "link": "https://t.me/xoxovvv"
+    },
+    {
+         "name": "https://t.me/poj168", 
+         "link": "https://t.me/qiuyuezt"
+    },
+    {
+         "name": "https://t.me/lsj04", 
+         "link": "https://t.me/jsjdn121"
+    },
+    {
+         "name": "Libchecker", 
+         "link": "https://t.me/libchecker_ci"
+    },
+    {
+         "name": "Zygisk", 
+         "link": "https://t.me/real5ec1cff"
+    },
+    {
+         "name": "LSPosed", 
+         "link": "https://t.me/LSPosed"
+    },
+    {
+         "name": "https://t.me/LSPatchArchives", 
+         "link": "https://t.me/LSPosedDiscussion"
+    },
+    {
+         "name": "https://t.me/nullptr_dev", 
+         "link": "https://t.me/LSPosedArchives"
+    },
+    {
+         "name": "KernelSU", 
+         "link": "https://t.me/KernelSU"
+    },
+    {
+         "name": "https://t.me/KernelSUmodules", 
+         "link": "https://t.me/KernelSU_group"
+    },
+    {
+         "name": "KernelSU Next", 
+         "link": "https://t.me/KernelSuNext"
+    },
+    {
+         "name": "AndroidIDE", 
+         "link": "https://t.me/AndroidIDEOfficial"
+    },
+    {
+         "name": "https://t.me/AndroidIDE_Discussions", 
+         "link": "--"
+    },
+    {
+         "name": "隐藏列表", 
+         "link": "https://t.me/HideMyApplist"
+    },
+    {
+         "name": "哔哩漫游", 
+         "link": "https://t.me/biliroaming"
+    },
+    {
+         "name": "爱玩机", 
+         "link": "https://t.me/aiwanji"
+    },
+    {
+         "name": "https://t.me/xiao_baiyang", 
+         "link": "--"
+    },
+    {
+         "name": "MTProto代理", 
+         "link": "https://t.me/MTP_roto"
+    },
+    {
+         "name": "https://t.me/PinkProxy", 
+         "link": "https://t.me/mtplinks"
+    },
+    {
+         "name": "Mt管理器", 
+         "link": "https://t.me/mtmanager"
+    },
+    {
+         "name": "JsHook", 
+         "link": "https://t.me/jshookapp"
+    },
+    {
+         "name": "NP管理器", 
+         "link": "https://t.me/NP_Manager_Official_Channel"
+    },
+    {
+         "name": "InstallerX", 
+         "link": "https://t.me/InstallerX"
+    },
+    {
+         "name": "AppManager", 
+         "link": "https://t.me/AppManagerChannel"
+    },
+    {
+         "name": "https://t.me/AppManagerDebug", 
+         "link": "--"
+    },
+    {
+         "name": "Scene", 
+         "link": "https://t.me/scene2023"
+    },
+    {
+         "name": "极搜2.0", 
+         "link": "https://t.me/jisou2bot"
+    },
+    {
+         "name": "https://t.me/jisou", 
+         "link": "--"
+    },
+    {
+         "name": "心惊报", 
+         "link": "https://t.me/xinjingdaily"
+    },
+    {
+         "name": "沙雕墙", 
+         "link": "https://t.me/woshadiao"
+    },
+    {
+         "name": "风向旗", 
+         "link": "https://t.me/xhqcankao"
+    },
+    {
+         "name": "知名女博主淫乱", 
+         "link": "https://t.me/WMQBOSS"
+    },
+    {
+         "name": "https://t.me/jdjejdww", 
+         "link": "https://t.me/DONGLGIF"
+    },
+    {
+         "name": "https://t.me/chiguaou", 
+         "link": "https://t.me/chiguatvb"
+    },
+    {
+         "name": "https://t.me/CoserPussy", 
+         "link": "https://t.me/xrw7715"
+    },
+    {
+         "name": "https://t.me/kelongzhe", 
+         "link": "https://t.me/zhenmeiyisi"
+    },
+    {
+         "name": "https://t.me/mdzz888888", 
+         "link": "https://t.me/ntong_1"
+    },
+    {
+         "name": "https://t.me/zhohuaa", 
+         "link": "https://t.me/svzgc"
+    },
+    {
+         "name": "https://t.me/ufo772", 
+         "link": "https://t.me/lolicoss"
+    },
+    {
+         "name": "https://t.me/yaoyao16764646", 
+         "link": "https://t.me/chigua_e"
+    },
+    {
+         "name": "https://t.me/lspooxx", 
+         "link": "https://t.me/a136582"
+    },
+    {
+         "name": "https://t.me/chengzimiao", 
+         "link": "https://t.me/COSYiMi"
+    },
+    {
+         "name": "https://t.me/icoset", 
+         "link": "https://t.me/chuchu_GIF"
+    },
+    {
+         "name": "https://t.me/CHANSHAXIUCHE958", 
+         "link": "https://t.me/yioujy3ot"
+    },
+    {
+         "name": "https://t.me/csxiuche1", 
+         "link": "https://t.me/cshsb1"
+    },
+    {
+         "name": "https://t.me/SPA888tybg", 
+         "link": "https://t.me/sdd77y"
+    },
+    {
+         "name": "https://t.me/+j8gm0wLkEDA0M2Q0", 
+         "link": "https://t.me/wojiaoyaoyaoyao"
+    },
+    {
+         "name": "https://t.me/kkd5633", 
+         "link": "https://t.me/yankong5"
+    },
+    {
+         "name": "https://t.me/Xiangnaier001", 
+         "link": "https://t.me/luchuzhe888"
+    },
+    {
+         "name": "https://t.me/FC888Xc", 
+         "link": "https://t.me/EnjoyJK"
+    },
+    {
+         "name": "https://t.me/https_51cg_fun_1", 
+         "link": "https://t.me/youtube_hothot"
+    },
+    {
+         "name": "https://t.me/baoguang_9", 
+         "link": "https://t.me/gao66"
+    },
+    {
+         "name": "https://t.me/ofochuanmei", 
+         "link": "https://t.me/guaidan21"
+    },
+    {
+         "name": "https://t.me/tttkid", 
+         "link": "https://t.me/chiguasea"
+    },
+    {
+         "name": "https://t.me/aichaoporn", 
+         "link": "https://t.me/dianbao7"
+    },
+    {
+         "name": "Java", 
+         "link": "https://t.me/javatg"
+    },
+    {
+         "name": "https://t.me/javalib", 
+         "link": "https://t.me/javaproglib"
+    },
+    {
+         "name": "兔兔", 
+         "link": "https://t.me/tutu33441"
+    },
+    {
+         "name": "https://t.me/Ccc5200a", 
+         "link": "https://t.me/tutuj200"
+    },
+    {
+         "name": "https://t.me/awdydbbb", 
+         "link": "https://t.me/linedc3257"
+    },
+    {
+         "name": "其他", 
+         "link": "https://t.me/bb_show"
+    },
+    {
+         "name": "https://t.me/googlecamera_gcam_mod_port_apkw", 
+         "link": "https://t.me/TGdailivpn"
+    },
+    {
+         "name": "https://t.me/hzaaccc", 
+         "link": "https://t.me/wewantyoutodothejob"
+    },
+    {
+         "name": "https://t.me/hell_ZJ", 
+         "link": "https://t.me/privacy_com"
+    },
+    {
+         "name": "https://t.me/shegongfenxiang6666", 
+         "link": "https://t.me/baoguang_4"
+    },
+    {
+         "name": "https://t.me/XingDunGuanFang", 
+         "link": "https://t.me/MotherDog520"
+    },
+    {
+         "name": "https://t.me/heihesgk", 
+         "link": "https://t.me/coco6cc"
+    },
+    {
+         "name": "https://t.me/GuangGaoShaShouBot", 
+         "link": "https://x.com/@Nanako8964_/"
+    },
+    {
+         "name": "https://x.com/@cyx_echo", 
+         "link": "https://x.com/"
+    },
+    {
+         "name": "https://x.com/@zhi_cat", 
+         "link": "https://x.com/@qiaoqiao147"
+    },
+    {
+         "name": "https://x.com/@YOYOsaikou", 
+         "link": "https://x.com/@xiaoyouzi1314"
+    },
+    {
+         "name": "https://x.com/@miuu4u", 
+         "link": "https://x.com/@yuanzichan"
+    },
+    {
+         "name": "https://x.com/@teyi0214", 
+         "link": "https://x.com/@0511dyst"
+    },
+    {
+         "name": "https://x.com/@Harusaki_cos", 
+         "link": "https://x.com/@xxxmmouo"
+    },
+    {
+         "name": "https://x.com/@rantsoni8", 
+         "link": "https://x.com/@xiaopengugugu"
+    },
+    {
+         "name": "https://x.com/@sayomomoo", 
+         "link": "https://x.com/@chengzimiaoj"
+    },
+    {
+         "name": "https://x.com/@chengzimiaoji1", 
+         "link": "https://x.com/@galaxyrita_"
+    },
+    {
+         "name": "https://x.com/@mingchudesu", 
+         "link": "https://x.com/@kittypaopao"
+    },
+    {
+         "name": "https://x.com/@kuren_chan", 
+         "link": "https://x.com/@tokio0131"
+    },
+    {
+         "name": "https://x.com/@noe__0301", 
+         "link": "https://x.com/@Mieruoxo"
+    },
+    {
+         "name": "https://x.com/@Yibeibuchi_", 
+         "link": "https://x.com/@TangMianZ"
+    },
+    {
+         "name": "https://x.com/@quan763", 
+         "link": "https://x.com/@a99999ya"
+    },
+    {
+         "name": "https://x.com/@XianYueZzz", 
+         "link": "https://x.com/@XianYueZzzz"
+    },
+    {
+         "name": "https://x.com/@TvVv177", 
+         "link": "https://x.com/@gbyaochirou"
+    },
+    {
+         "name": "https://x.com/@JomaiRamen", 
+         "link": "https://x.com/@madousuchang"
+    },
+    {
+         "name": "https://x.com/@woshisuchang", 
+         "link": "https://x.com/@tutujiang147"
+    },
+    {
+         "name": "https://x.com/@tujiangbaby", 
+         "link": "https://x.com/@luoliyouquan"
+    },
+    {
+         "name": "https://x.com/@Xiaonai_1", 
+         "link": "https://x.com/@xiang_zhe44887"
+    },
+    {
+         "name": "https://x.com/@mm5121187", 
+         "link": "https://x.com/@shell_01234"
+    },
+    {
+         "name": "https://x.com/@yngyng246132", 
+         "link": "https://x.com/@bbing_cos"
+    },
+    {
+         "name": "https://x.com/@JohnHarrin20885", 
+         "link": "https://x.com/@Christingie25"
+    },
+    {
+         "name": "https://x.com/@CP4399", 
+         "link": "https://x.com/@TaiTitan38187"
+    },
+    {
+         "name": "https://x.com/@momo_neko_nene", 
+         "link": "https://x.com/@Occxun"
+    },
+    {
+         "name": "https://x.com/@yigeleimi", 
+         "link": "https://x.com/@poe_platform"
+    },
+    {
+         "name": "https://x.com/@Android", 
+         "link": "https://x.com/@Google"
+    },
+    {
+         "name": "https://x.com/@GooglePlay", 
+         "link": "https://x.com/@Windows"
+    },
+    {
+         "name": "https://x.com/@u43455171", 
+         "link": "https://x.com/@YaoYaoLoveFan"
+    },
+    {
+         "name": "https://x.com/@boluoyou2190", 
+         "link": "https://x.com/@wenwenrou_"
+    },
+    {
+         "name": "https://x.com/@Ebenholz715", 
+         "link": "https://x.com/@tuzaipw"
+    }
+]

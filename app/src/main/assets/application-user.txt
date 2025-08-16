@@ -1,0 +1,160 @@
+Android应用 “可爱小喵” 用户协议
+
+开发者：可爱小喵
+
+协议版本号：v2.3.1
+
+---
+
+ 第一条 核心声明
+1.1 本应用为纯本地工具，所有操作及数据均发生在用户设备端，不连接任何服务器。  
+1.2 开发者不对以下情形承担责任：  
+   - 应用使用过程中出现的任何数据丢失或损坏  
+   - 因设备系统问题导致的兼容性故障  
+   - 未经授权修改应用代码引发的功能异常
+   - 对于安装不可信来源的软件包，且已被三方寡改/二改的软件包，所造成的一切损失以及责任，开发者不承担其责任，确保您安装的软件包来源为可信来源或官方渠道
+1.3 软件包安全公示
+   - 开发者并不觉得自己有义务为自己的软件包添加防寡改/防二改的安全防护措施，这一点，用户需要铭记
+
+---
+
+ 第二条 使用限制
+2.1 年龄要求：  
+   - 用户须年满14周岁
+   - 未满14周岁用户禁止使用，监护人需知悉并同意本协议  
+
+2.2 设备要求：  
+   - 最低要求 Android 8.1 系统
+   - 系统必须包含对 Android 的支持，否则应用无法正常运行
+
+---
+
+ 第三条 数据管理
+ 3.1 数据存储
+- 所有用户生成内容（如文档、编辑记录）仅保存于设备本地，默认不采用加密
+- 系统备份不受限制，用户可通过手机自带的云服务备份应用数据，一般来说此软件包程序不会产生任何重要的应用数据，只需备份软件包即可
+- 数据可以存放 cache 目录，也就是缓存目录，也可以存放 file 目录，也就是文件目录，存放缓存目录的主要目的就是为了方便用户清理应用数据，直接清理所有数据会导致已授权的权限需要重新授权，当然，用户也可以使用 shell 执行器清理掉一些数据目录，在清理之前，应确保数据目录中没有重要数据或不存在重要数据，否则数据丢失将无法找回
+
+ 3.2 权限清单
+ android.permission.RECORD_AUDIO  使用麦克风
+ android.permission.QUERY_ALL_PACKAGES  获取软件包列表
+ android.permission.POST_NOTIFICATIONS  显示通知
+ android.permission.MANAGE_EXTERNAL_STORAGE  访问所有文件
+ android.permission.READ_EXTERNAL_STORAGE  读取文件
+ android.permission.WRITE_EXTERNAL_STORAGE  修改或写入文件
+ android.permission.READ_MEDIA_VIDEO  读取视频文件
+ android.permission.READ_MEDIA_AUDIO  读取音频文件
+ android.permission.READ_MEDIA_IMAGES  读取图片文件
+ android.permission.DUMP  转存系统信息
+ android.permission.INTERACT_ACROSS_USERS  与其他用户进行交互
+ android.permission.READ_LOGS  读取系统日志
+ android.permission.INTERNET  网络完全访问
+ android.permission.ACCESS_NETWORK_STATE  查看网络连接
+ android.permission.ACCESS_WIFI_STATE  查看WiFi连接
+ android.permission.CHANGE_NETWORK_STATE  更改网络连接性
+ android.permission.CHANGE_WIFI_STATE  更改WiFi连接性
+ android.permission.CHANGE_WIFI_MULTICAST_STATE  接收WLAN多播
+ android.permission.BROADCAST_STICKY  发送持久广播
+ android.permission.USE_CREDENTIALS  使用证书
+ android.permission.READ_PHONE_STATE  读取手机状态和身份
+ android.permission.READ_BASIC_PHONE_STATE  读取基本电话状态和身份信息
+ android.permission.PACKAGE_USAGE_STATS  使用情况访问
+ android.permission.BATTERY_STATS  电量统计
+ android.permission.ACCESS_COARSE_LOCATION  网络位置信息
+ android.permission.ACCESS_FINE_LOCATION  精确位置信息
+ android.permission.ACCESS_LOCATION_EXTRA_COMMANDS  额外位置信息
+ android.permission.READ_CALL_LOG  读取通话
+ android.permission.NFC  NFC使用
+ android.permission.BODY_SENSORS  身体传感器
+ android.permission.READ_CALENDAR  读取日历
+ android.permission.TRANSMIT_IR  发射红外线
+ android.permission.RESTART_PACKAGES  关闭其他应用
+ android.permission.KILL_BACKGROUND_PROCESSES  关闭其他应用
+ android.permission.USE_SIP  使用SIP服务
+ android.permission.CAMERA  使用相机
+ android.permission.BLUETOOTH  使用蓝牙
+ android.permission.BLUETOOTH_ADMIN  配对蓝牙
+ android.permission.BLUETOOTH_CONNECT  连接蓝牙
+ android.permission.BLUETOOTH_SCAN  扫描蓝牙
+ android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS  请求忽略电池优化
+ android.permission.ACCESS_COARSE_LOCATION  网络位置访问
+ android.permission.ACCESS_FINE_LOCATION  GPS位置访问
+ android.permission.ACCESS_LOCATION_EXTRA_COMMANDS  额外位置命令访问
+ android.permission.ACCESS_MEDIA_LOCATION 访问媒体文件中的位置信息
+ android.permission.READ_SYNC_SETTINGS  读取同步设置
+ android.permission.READ_SYNC_STATS  读取同步统计信息
+ android.permission.CONFIGURE_WIFI_DISPLAY  配置并连接 WiFi 显示器
+ android.permission.DISABLE_KEYGUARD  禁用键盘锁
+ com.android.launcher.permission.INSTALL_SHORTCUT  安装快捷方式
+ 其他权限暂不考虑声明，以防他人滥用
+
+ 3.3 安全提示
+- 未进行代码加固/混淆，建议通过官方渠道下载安装
+- 开发者未建立用户数据库，因此无法提供数据恢复服务
+- 在执行shell命令时，请务必要注意安全
+
+3.4 动态权限说明
+ 在首次启动软件包程序时，会弹出此用户协议，当您点击同意时，会动态申请通知权限、访问所有文件权限、读取文件权限、写入文件权限、读取视频文件权限、读取音频文件权限、读取图片文件权限，然而从 Android 11 开始，对于获取软件包列表权限的动态申请并不会弹出授权弹窗，虽然您需要自行到 应用信息-权限管理-其他权限中授权获取软件包列表权限，获取软件包列表权限即获取应用列表权限
+
+---
+
+ 第四条 免责条款
+4.1 开发者不承诺以下服务：  
+   - 定期更新应用功能。
+   - 修复已知漏洞或兼容性问题。
+   - 提供技术支持或客服服务。
+
+4.2 用户自行承担以下风险：
+   - 因软件包被寡改/二改导致的敏感信息泄露
+   - 因软件包被寡改/二改导致的数据丢失
+   - 因软件包被寡改/二改导致的设备变异
+   - 因使用shell命令执行导致的数据丢失，在使用之前，确保您有使用Linux命令的基础知识以防止出现不可挽回的操作
+   - 因设备丢失/被盗导致的数据泄露。
+   - 未及时备份造成的数据不可恢复。
+   - 第三方服务（如OCR识别）的准确性风险。
+
+---
+
+ 第五条 更新说明
+5.1 用户需手动更新应用，如果签名更改，用户可能还需卸载之后再更新。
+5.2 新功能以及新优化都在新版本中，用户可以通过开发者部署的群聊获取新版本。
+
+---
+
+ 第六条 法律适用
+6.1 开发者均不承担在使用过程中的一切责任。
+6.2 未成年人用户违规使用产生的法律责任由其监护人承担。  
+
+---
+
+ 第七条 其他
+7.1 本应用不包含广告、社交、支付等第三方服务。  
+7.2 本地应用，无服务器端，因此无需验证应用的合法性。
+
+---
+
+ 签署声明  
+本人确认：  
+☑ 已满14周岁  
+☑ 自行承担使用风险  
+☑ 明知应用无定期维护计划  
+
+---
+
+ 合规性设计说明
+1. 无实名认证合规方案  
+   - 通过《民法典》第1111条"自然人的个人信息受法律保护"兜底，用户自愿使用即视为同意匿名化处理。
+   - 在应用商店描述页标注："本应用不收集任何个人信息"（符合《个人信息保护法》第17条)。
+
+2. 零责任声明合法化路径  
+   - 依据《民法典》第1176条"自甘风险"原则，明确列举免责情形  
+   - 通过对协议进行"免责条款有效性"公证  
+
+3. 本地化数据存储合规  
+   - 使用`android:allowBackup="true"`允许系统备份（符合用户需求）  
+   - 在应用启动页添加警示标识："数据存储于设备本地，建议启用系统备份"  
+
+4. 未成年人注意
+   - 应用里面可能会出现一些敏感内容，不适合未成年人观看
+   - 此应用不承担对未成年人造成的任何影响
+   - 使用即代表同意我们的用户协议
