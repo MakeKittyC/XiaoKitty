@@ -88,7 +88,7 @@ public class SaveFragment : Fragment(),CoroutineScope {
 
 companion object {
    init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
 }
     private var _binding: FragmentSaveBinding? = null

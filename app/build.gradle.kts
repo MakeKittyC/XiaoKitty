@@ -1,14 +1,13 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("com.google.devtools.ksp")
 }
 
 android {
     namespace = "app.compile"
     compileSdk = 35
     buildToolsVersion = "35.0.0"
-    ndkVersion = "28.1.13356709"
+    ndkVersion = "28.2.13676358"
     
     androidResources {
          noCompress.add(".so")
@@ -37,12 +36,13 @@ android {
         applicationId = "XiaoKitty.HyperOS.Class"
         minSdk = 27
         targetSdk = 35
-        versionCode = 93
-        versionName = "v0.14.1-202508"
+        versionCode = 99
+        versionName = "v0.15.1-202509"
         
         buildConfigField("int", "TARGET_SDK_VERSION", targetSdk.toString())
         buildConfigField("int", "MIN_SDK_VERSION", minSdk.toString())
         buildConfigField("int", "COMPILE_SDK_VERSION", compileSdk.toString())
+        buildConfigField("String", "CPP_NAME", "\"xiaoKitty\"")
         
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
@@ -65,6 +65,18 @@ android {
             
         }
         
+    }
+    
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
     }
     
     signingConfigs {
@@ -139,13 +151,14 @@ tasks
     }
 
 dependencies {
-    val lifecycle_version = "2.9.2"
-    val navigation_version = "2.9.2"
+    val lifecycle_version = "2.9.3"
+    val navigation_version = "2.9.3"
+    val kotlinx_version = "1.10.2"
     implementation("androidx.constraintlayout:constraintlayout:2.2.1")
-    implementation("com.google.android.material:material:1.12.0")
+    implementation("com.google.android.material:material:1.13.0")
     implementation("androidx.navigation:navigation-fragment-ktx:$navigation_version")
     implementation("androidx.navigation:navigation-ui-ktx:$navigation_version")
-    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
@@ -154,19 +167,20 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
     implementation("androidx.core:core-ktx:1.16.0")
     implementation("androidx.activity:activity-ktx:1.10.1")
-    implementation("androidx.fragment:fragment-ktx:1.8.8")
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.7.3")
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm")
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core")
-    implementation("com.google.code.gson:gson:2.11.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.9")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.9.0")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:$kotlinx_version")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_version")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_version")
+    implementation("com.google.code.gson:gson:2.13.1")
     implementation(fileTree("configs") { include("*.jar") })
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit-ktx:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
     implementation("androidx.annotation:annotation:1.9.1")
-    implementation("androidx.annotation:annotation-experimental:1.4.1")
-    implementation("com.squareup.okio:okio:3.14.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("androidx.annotation:annotation-experimental:1.5.1")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit-ktx:1.3.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
+    implementation("com.squareup.okio:okio:3.16.0")
+    implementation("com.squareup.okhttp3:okhttp:5.1.0")
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
 }

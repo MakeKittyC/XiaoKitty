@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- 应用图标背景颜色 -->
-    <color name="xml_xiao_v2">#C7DEF8</color>
+    <color name="xml_xiao_v2">#FFC0FB</color>
     <!-- 应用图标颜色 -->
     <color name="xml_xiao_v3">#FF9612ED</color>
+    
+    <!-- 主题颜色 -->
+    <color name="theme_background">#ffcaf7</color>
+    <color name="status_bar_color">#8444F3</color>
+    <color name="fragment_background">#ffcaf7</color>
     
     <color name="atek_meun_color">#FF101010</color>
     <color name="com_app">#C7DEF8</color>
@@ -26,22 +31,23 @@
     <color name="lxyn_activity_seekbar_a">#FF9612ED</color>
     <color name="lxyn_activity_seekbar_b">#FF142DF4</color>
     <color name="lxyn_activity_seekbar_c">#FFE1B0FF</color>
-    <color name="lxyn_activity_card">#ffcaf7</color>
+    <color name="lxyn_activity_card">#FFE1B0FF</color>
     <color name="task_valo_card">#C7DEF8</color>
-    <color name="task_activity_toolbar">#FFE1B0FF</color>
+    <color name="task_activity_toolbar">#ffcaf7</color>
     <color name="lxyn_activity_toolbar">#C7DEF8</color>
     <color name="task_activity_nav">#FDBFFD</color>
-    <color name="task_vote_tab">#FFE1B0FF</color>
+    <color name="task_vote_tab">#ffcaf7</color>
     <color name="image_activity_toolbar">#FFE1B0FF</color>
-    <color name="image_theme">#F69BFA</color>
+    <color name="main_cos">#FFE1B0FF</color>
     
     <color name="task_activity_t1">#93D9FD</color>
     <color name="task_activity_t2">#F0DFDFDF</color>
-    <color name="task_item_background">#B1DFDFDF</color>
     <color name="task_item_backgroundTint">#C7DEF8</color>
     
-    <color name="main_text">#9806F9</color>
-    <color name="main_button">#ffcaf7</color>
-    <color name="main_hint">#9806F9</color>
+    <color name="main_text">#000000</color>
+    <color name="main_button">#FDBFFD</color>
+    <color name="main_hint">#000000</color>
     <color name="link_text">#FF142DF4</color>
+    
+    <color name="notification_color">#ffcaf7</color>
 </resources>

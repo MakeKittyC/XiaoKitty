@@ -21,6 +21,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "XiaoKitty"
+rootProject.name = "xiao"
 
-include(":app")
+include(":app", ":file", ":rish")

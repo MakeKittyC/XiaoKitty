@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name" translatable="false">XiaoKitty</string>
-<string name="app_activity_name">XiaoKitty</string>
-<string name="app_app_name">XiaoKitty</string>
-<string name="app_activity_image">调试入口</string>
+<string name="app_name" translatable="false">Kitty</string>
+<string name="app_activity_name">Kitty</string>
+<string name="app_app_name">Kitty</string>
+<string name="app_activity_image">小咪咪</string>
 <string name="task_just_view1">查看</string>
 <string name="task_just_view2">删除文件</string>
 <string name="title_fragment_valo">实验室</string>
@@ -20,6 +20,7 @@
 <string name="action_task_6">关闭程序(确保只在不需要时关闭)</string>
 <string name="action_image_1">无需多言</string>
 <string name="action_image_2">开发进度</string>
+<string name="action_image_3">启动服务</string>
 <string name="xyn_add_1">次</string>
 <string name="xyn_add_2">MainActivity</string>
 <string name="xyn_add_3">主</string>

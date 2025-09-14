@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.Observer
 import app.compile.databinding.FragmentArtsBinding
 import app.compile.R
+import app.compile.BuildConfig
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -35,7 +36,7 @@ public class ArtsFragment : Fragment(R.layout.fragment_arts), ItemClickListener 
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

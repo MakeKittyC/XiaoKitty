@@ -30,7 +30,7 @@ public class FastFragment : Fragment() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

@@ -5,9 +5,8 @@
      xmlns:tools="http://schemas.android.com/tools"
      android:layout_height="match_parent"
      android:layout_width="match_parent"
+     android:background="@color/fragment_background"
      android:orientation="vertical"
-     android:background="@color/task_item_background"
-     android:backgroundTint="@color/com_app_s"
      android:id="@+id/androidx"
      tools:context="app.ui.vote.ui.atek.AtekFragment" >
 

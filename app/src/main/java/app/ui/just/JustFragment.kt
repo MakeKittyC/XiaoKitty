@@ -38,7 +38,7 @@ public class JustFragment : Fragment() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

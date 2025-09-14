@@ -80,12 +80,13 @@ import kotlinx.coroutines.withContext
 
 import app.compile.R
 import app.TaskActivity
+import app.compile.BuildConfig
 
 public class NotificationReceiver : BroadcastReceiver() {
 
     companion object {
         init {
-           System.loadLibrary("NonNull")
+           System.loadLibrary("${BuildConfig.CPP_NAME}")
         }
         private const val CHANNEL_ID = "Msg"
         private const val CHANNEL_NAME = "消息通知"
@@ -147,6 +148,14 @@ public class NotificationReceiver : BroadcastReceiver() {
             context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.notify(NOTIFICATION_ID, notification)
           }
+          // 标为已读
+          "ACTION_MARK_AS_READ" -> {
+            // 处理标记为已读的逻辑
+            val readMessage = "消息已读"
+            val personName = "小猫猫" // 指定的用户名
+            updateNotificationAsRead(context, readMessage, personName)
+            
+          }
        }
     }
 
@@ -155,13 +164,35 @@ public class NotificationReceiver : BroadcastReceiver() {
             val channel = NotificationChannel(
                 CHANNEL_ID,
                 CHANNEL_NAME,
-                NotificationManager.IMPORTANCE_DEFAULT
-            )
+               // 默认 NotificationManager.IMPORTANCE_DEFAULT
+                NotificationManager.IMPORTANCE_HIGH
+            ).apply {
+           description = "消息样式类通知-MessagingStyle"
+        }
             val notificationManager =
                 context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
         }
     }
+    
+    private fun updateNotificationAsRead(context: Context, message: String, personName: String) {
+    // 指定的标题
+    val title = "新消息" // 更新的标题
+
+    // 创建更新后的通知
+    val notification = buildMessagingNotification(
+        context,
+        title,
+        message,
+        personName
+    )
+
+    // 获取 NotificationManager
+    val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+    // 使用相同的通知 ID 更新通知
+    notificationManager.notify(NOTIFICATION_ID, notification)
+}
 
     private fun updateOriginalNotification(context: Context, replyText: String) {
     // 从 SharedPreferences 读取配置
@@ -234,19 +265,6 @@ public class NotificationReceiver : BroadcastReceiver() {
         action = "ACTION_MARK_AS_READ"
     }
     
-    // Intent to open the details Activity
-    val viewDetailsIntent = Intent(context, TaskActivity::class.java).apply {
-        flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-    }
-
-    // PendingIntent to open the Activity when the notification is clicked
-    val viewDetailsPendingIntent: PendingIntent = PendingIntent.getActivity(
-        context,
-        conversationId + 2, // 确保唯一性
-        viewDetailsIntent,
-        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE
-    )
-    
     val replyPendingIntent: PendingIntent = PendingIntent.getBroadcast(
         context,
         conversationId,
@@ -283,7 +301,7 @@ public class NotificationReceiver : BroadcastReceiver() {
 
         val messagingStyle = NotificationCompat.MessagingStyle(person)
         .setConversationTitle(title)
-        .setGroupConversation(true)
+        // .setGroupConversation(true)
         .addMessage(message, notificationTime, person)
 
         if (oldMessage != null) {
@@ -305,11 +323,12 @@ public class NotificationReceiver : BroadcastReceiver() {
             .setAutoCancel(true)
             .setContentTitle(title)
             .setContentText(message)
-            .setPriority(NotificationCompat.PRIORITY_HIGH)
-            .setContentIntent(viewDetailsPendingIntent)
+            .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+            .setBadgeIconType(NotificationCompat.BADGE_ICON_NONE)
+            .setVibrate(longArrayOf(100, 200, 300, 400, 500))
+            .setPriority(NotificationCompat.PRIORITY_MAX)
             .addAction(action)
             .addAction(markAsReadAction)
-            .setOngoing(false)
             .build()
     }
     

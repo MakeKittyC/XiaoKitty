@@ -12,6 +12,7 @@ import android.os.Process
 import java.io.IOException
 import java.io.BufferedReader
 import app.compile.R
+import app.compile.BuildConfig
 import android.content.pm.PackageManager
 import android.content.pm.Signature
 import android.widget.Toast
@@ -20,7 +21,7 @@ public class Prop : Application() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

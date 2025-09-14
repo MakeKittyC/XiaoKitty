@@ -15,6 +15,7 @@ import android.net.Uri
 import android.util.Log
 
 import android.app.PendingIntent
+import android.app.NotificationManager
 
 import android.provider.MediaStore
 
@@ -86,14 +87,14 @@ public class ValoFragment : Fragment() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }
     private var _binding: FragmentValoBinding? = null
     private val binding get() = _binding!!
     
-    private var androidxConstraintLayout: ConstraintLayout? = null
+    private var androidxNestedScrollView: NestedScrollView? = null
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var imagePickerLauncher: ActivityResultLauncher<Intent>
 
@@ -113,12 +114,14 @@ companion object {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        androidxConstraintLayout = binding.androidxConstraintLayout
+        androidxNestedScrollView = binding.androidxNestedScrollView
         
         sharedPreferences = requireContext().getSharedPreferences("new_message", Context.MODE_PRIVATE)
         
         // 自动填充已保存的配置
         autoFillConfig()
+        
+        listNotificationChannels()
 
         // 初始化图片选择器
         imagePickerLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -134,19 +137,52 @@ companion object {
         }
 
         binding.androidButton.setOnClickListener {
-            sendBroadcast()
+             sendBroadcast()
         }
 
         binding.androidTextView6.setOnClickListener {
             selectImage()
         }
+        
+        binding.kkButton.setOnClickListener {
+          val channelId = binding.kkTextInputEditText.text.toString()
+            if (channelId.isNotEmpty()) {
+                deleteNotificationChannel(channelId)
+            } else {
+                Toast.makeText(requireContext(), "删除失败，通知渠道ID不存在", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        androidxConstraintLayout = null
+        androidxNestedScrollView = null
         _binding = null
         
+    }
+    
+    private fun listNotificationChannels() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val notificationManager = activity?.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            val channels = notificationManager.notificationChannels
+
+            val channelList = StringBuilder()
+            for (channel in channels) {
+                channelList.append("通知渠道ID: ${channel.id}, 名称: ${channel.name}, 重要级别: ${channel.importance}\n")
+            }
+            binding.outputTextView.text = if (channelList.isNotEmpty()) {
+                channelList.toString()
+            } else {
+                "No notification channels available."
+            }
+        } else {
+            binding.outputTextView.text = "Notification channels are not supported on this version of Android."
+        }
+    }
+
+    private fun deleteNotificationChannel(channelId: String) {
+            val notificationManager = activity?.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.deleteNotificationChannel(channelId)
     }
     
     private fun autoFillConfig() {

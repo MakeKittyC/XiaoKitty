@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import app.compile.databinding.FragmentAtekBinding
 import app.compile.R
+import app.compile.BuildConfig
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -47,7 +48,7 @@ public class AtekFragment : Fragment(), ItemClickListener {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

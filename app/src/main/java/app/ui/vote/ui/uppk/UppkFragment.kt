@@ -9,13 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import app.compile.databinding.FragmentUppkBinding
 import app.compile.R
+import app.compile.BuildConfig
 import androidx.core.widget.NestedScrollView
 
 public class UppkFragment : Fragment() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

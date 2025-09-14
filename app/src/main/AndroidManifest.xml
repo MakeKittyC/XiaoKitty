@@ -238,6 +238,8 @@
     <uses-permission 
           android:name="android.permission.RECEIVE_BOOT_COMPLETED"
           tools:node="remove" />
+    <!-- 访问通知策略 -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <!-- 允许应用程序读取或写入系统设置 -->
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <!-- 允许应用程序读取或写入安全系统设置 -->
@@ -463,6 +465,7 @@
         android:usesCleartextTraffic="true"
         android:attributionsAreUserVisible="true"
         android:preserveLegacyExternalStorage="true"
+        android:hardwareAccelerated="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:permission="approve.info.RUN_JOB_XIAOKITTY"
         android:name="app.prop.Prop"
@@ -523,13 +526,13 @@
             android:required="false" />
         <meta-data
             android:name="META-INF"
-            android:value="XiaoKitty-V3.4" />
+            android:value="XiaoKitty-V3.8" />
         <meta-data
             android:name="XiaomiHyperOS"
             android:value="OS3 + OS2 + v816" />
         <meta-data
             android:name="XiaoKiity"
-            android:value="main-V1.8" />
+            android:value="main-V3.8" />
 			
         <activity-alias
              android:icon="@mipmap/image_008"
@@ -615,26 +618,26 @@
             android:value="debug-service" />
      </service>
      
-    <service
-        android:name="app.service.TiKService" 
+     <service
+        android:name="app.push.NotificationService" 
         android:process=":task"
         android:enabled="true"
         android:exported="false"
         android:permission="approve.info.RUN_JOB_XIAOKITTY"
-        android:foregroundServiceType="connectedDevice" >
-        <intent-filter>
-            <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
-        </intent-filter>
-        <meta-data 
-            android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
-            android:resource="@xml/device_filter" />
-        <meta-data
-            android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
-            android:resource="@xml/accessory_filter" />
-    </service>
+        android:foregroundServiceType="specialUse" >
+       <intent-filter>
+           <action android:name="ACTION_SHOW_NOTIFICATION" />
+       </intent-filter>
+       <intent-filter>
+           <action android:name="ACTION_REPLY" />
+       </intent-filter>
+       <intent-filter>
+           <action android:name="ACTION_MARK_AS_READ" />
+       </intent-filter>
+        <property
+            android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+            android:value="msg-service" />
+     </service>
 
     <receiver
          android:name="app.push.NotificationReceiver"
@@ -655,6 +658,18 @@
        <intent-filter>
            <action android:name="ACTION_MARK_AS_READ" />
        </intent-filter>
+       <intent-filter>
+            <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+        </intent-filter>
+        <meta-data 
+            android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            android:resource="@xml/device_filter" />
+        <meta-data
+            android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+            android:resource="@xml/accessory_filter" />
     </receiver>
        
     </application>

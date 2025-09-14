@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/task_item_background"
     android:backgroundTint="@color/task_activity_toolbar"
     android:id="@+id/androidx_DrawerLayout"
     android:fitsSystemWindows="true"

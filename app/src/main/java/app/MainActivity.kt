@@ -1,8 +1,14 @@
 package app
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import android.os.Build
 import android.os.Bundle
+import android.os.IBinder
+import android.os.Handler
+import android.os.Looper
+import android.os.Environment
+import android.os.RemoteException
 import android.system.Os
 import android.system.OsConstants
 import androidx.viewpager2.widget.ViewPager2
@@ -33,6 +39,7 @@ import java.io.BufferedReader
 
 import android.app.Dialog
 import android.app.ActivityManager
+import android.app.UiModeManager
 
 import android.hardware.display.DisplayManager
 
@@ -50,6 +57,8 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 
 import android.content.DialogInterface
+import android.content.ServiceConnection
+import android.content.ComponentName
 import android.content.Intent
 import android.content.Context
 import android.content.res.Resources
@@ -66,6 +75,7 @@ import app.compile.databinding.ActivityMainBinding
 import app.compile.R
 import app.compile.BuildConfig
 import app.TaskActivity
+import app.push.NotificationService
 
 import kotlin.math.sqrt
 
@@ -78,7 +88,7 @@ public class MainActivity : AppCompatActivity() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }
@@ -348,7 +358,7 @@ fun getScreenSizeInInches(context: Context): Double {
         dialog.setCancelable(false)
         dialog.setCanceledOnTouchOutside(false)
         dialog.show()
-        dialog.window?.decorView?.backgroundTintList = ContextCompat.getColorStateList(this, R.color.image_theme)
+        dialog.window?.decorView?.backgroundTintList = ContextCompat.getColorStateList(this, R.color.main_cos)
     }
 
     // 获取 meta-data 状态
@@ -356,12 +366,12 @@ fun getScreenSizeInInches(context: Context): Double {
         return try {
             val appInfo = packageManager.getApplicationInfo(packageName, PackageManager.GET_META_DATA)
             if (appInfo.metaData?.containsKey("lspatch") == true) {
-                "警告：当前软件包已被 LSPatch 补丁"
+                "警告：软件包已被 LSPatch 修改过"
             } else {
-                "温馨提示：软件包未被 LSPatch 补丁"
+                "温馨提示：软件包未被 LSPatch 修改过"
             }
         } catch (e: PackageManager.NameNotFoundException) {
-            "无法判断软件包是否被 LSPatch 补丁"
+            "无法判断软件包是否被 LSPatch 修改过"
         }
     }
     
@@ -374,11 +384,21 @@ fun getScreenSizeInInches(context: Context): Double {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
            return when (item.itemId) {
               R.id.action_image_1 -> {
-            Toast.makeText(this, "无需多言……", Toast.LENGTH_SHORT).show()
+              Toast.makeText(this, "无需多言……", Toast.LENGTH_SHORT).show()
                true
            }
               R.id.action_image_2 -> {
-                  showDialog()
+              showDialog()
+                true
+           }
+              R.id.action_image_3 -> {
+              val intent = Intent(this, NotificationService::class.java).apply {
+    action = "ACTION_SHOW_NOTIFICATION"
+    putExtra("title", "标题")
+    putExtra("message", "消息内容")
+    putExtra("personName", "发送者名称")
+}
+this.startService(intent)
                 true
            }
              else -> super.onOptionsItemSelected(item)
@@ -401,5 +421,6 @@ fun getScreenSizeInInches(context: Context): Double {
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
+        
     }
 }

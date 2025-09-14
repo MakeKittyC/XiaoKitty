@@ -12,6 +12,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import androidx.viewpager2.widget.ViewPager2
 import app.compile.databinding.FragmentVoteBinding
 import app.compile.R
+import app.compile.BuildConfig
 import app.ui.vote.ui.save.SaveFragment
 import app.ui.vote.ui.atek.AtekFragment
 import app.ui.vote.ui.uppk.UppkFragment
@@ -25,7 +26,7 @@ public class VoteFragment : Fragment() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }
@@ -54,13 +55,13 @@ companion object {
     
     private fun setupViewPager(viewPager: ViewPager2) {
       val adapter = ViewPagerAdapter(requireActivity())
-        adapter.addFragment(AtekFragment(), "Top")
-        adapter.addFragment(ArtsFragment(), "Top1")
-        adapter.addFragment(SaveFragment(), "Top2")
-        adapter.addFragment(StarFragment(), "Top3")
-        adapter.addFragment(UparFragment(), "Top4")
-        adapter.addFragment(UppkFragment(), "Top5")
-        adapter.addFragment(AaptFragment(), "Top6")
+        adapter.addFragment(AtekFragment(), "Link")
+        adapter.addFragment(ArtsFragment(), "GitHub")
+        adapter.addFragment(SaveFragment(), "Shell")
+        adapter.addFragment(StarFragment(), "Top1")
+        adapter.addFragment(UparFragment(), "Top2")
+        adapter.addFragment(UppkFragment(), "Top3")
+        adapter.addFragment(AaptFragment(), "Top4")
         viewPager.adapter = adapter
     }
     

@@ -11,6 +11,12 @@ import android.Manifest
 import android.graphics.Color
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.Rect
+import android.graphics.RectF
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffXfermode
 import android.widget.RemoteViews
 import android.widget.TextView
 import android.widget.Button
@@ -54,6 +60,7 @@ import java.io.InputStream
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.text.DecimalFormat
+import java.util.concurrent.TimeUnit
 
 import androidx.core.app.Person
 import androidx.core.app.RemoteInput
@@ -76,7 +83,7 @@ public class DebugService : Service() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
 }
     private var job: Job? = null
@@ -143,26 +150,28 @@ companion object {
     
     private fun createNotification(message: String): Notification {
         val channelId = "debug"
-        val channelName = "Debug Service"
+        val channelName = "调试/测试服务"
         val importance = NotificationManager.IMPORTANCE_HIGH
         val notificationChannel = NotificationChannel(channelId, channelName, importance)
 
         // 注册通知渠道
         notificationManager.createNotificationChannel(notificationChannel)
         
-        val titleText = "调试服务框架"
+        val titleText = "服务正在运行"
         
         // 创建通知构建器
         return NotificationCompat.Builder(this, channelId)
-            .setSmallIcon(R.drawable.ic_xyn_dat)
+            .setSmallIcon(R.mipmap.image_004)
             .setContentTitle(titleText)
             .setContentText(message)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
+            .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+            .setBadgeIconType(NotificationCompat.BADGE_ICON_SMALL)
             .setAutoCancel(true)
             .setOngoing(true)
             .build()
     }
-
+    
     override fun onDestroy() {
         super.onDestroy()
         job?.cancel() // 取消协程任务

@@ -40,6 +40,7 @@ import android.app.Activity
 import android.app.PendingIntent
 
 import app.compile.R
+import app.compile.BuildConfig
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -69,7 +70,7 @@ public class StarFragment : Fragment() {
 
 companion object {
     init {
-        System.loadLibrary("NonNull")
+        System.loadLibrary("${BuildConfig.CPP_NAME}")
     }
     
 }

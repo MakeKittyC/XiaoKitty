@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.core.widget.NestedScrollView
      xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:app="http://schemas.android.com/apk/res-auto"
      xmlns:tools="http://schemas.android.com/tools"
      android:layout_height="match_parent"
      android:layout_width="match_parent"
-     android:id="@+id/androidx_ConstraintLayout"
-     android:background="@color/task_item_background"
-     android:backgroundTint="@color/com_app_s"
+     android:background="@color/fragment_background"
+     android:id="@+id/androidx_NestedScrollView"
      tools:context="app.ui.valo.ValoFragment" >
+     
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <!-- viewbinding -->
      <TextView
         android:id="@+id/android_TextView"
@@ -183,26 +186,27 @@
     <com.google.android.material.button.MaterialButton
           android:layout_width="300dp"
           android:layout_height="wrap_content"
-          android:layout_marginTop="7dp"
+          android:layout_marginTop="3dp"
           android:layout_marginBottom="3dp"
           android:text="保存通知消息配置"
           android:textSize="23sp"
-          android:padding="11dp"
+          android:padding="10dp"
           app:layout_constraintTop_toBottomOf="@+id/android_TextView6"
+          app:layout_constraintBottom_toTopOf="@+id/ti_TextInputLayout"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           android:id="@+id/idk_Button" />
 
   <com.google.android.material.textfield.TextInputLayout
-       android:layout_width="0dp"
+       android:layout_width="300dp"
        android:layout_height="wrap_content"
-       android:layout_marginBottom="83dp"
-       android:layout_marginStart="7dp"
-       android:layout_marginEnd="7dp"
-       app:layout_constraintEnd_toStartOf="@id/android_Button"
+       android:id="@+id/ti_TextInputLayout"
+       android:layout_marginTop="3dp"
+       android:layout_marginBottom="3dp"
+       app:layout_constraintTop_toBottomOf="@+id/idk_Button"
+       app:layout_constraintBottom_toTopOf="@+id/android_Button"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
        android:hint="请输入需要发送到通知的消息内容[仅供测试]">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -215,15 +219,67 @@
         android:layout_height="wrap_content" />
 </com.google.android.material.textfield.TextInputLayout>
 
-     <com.google.android.material.floatingactionbutton.FloatingActionButton
-          android:layout_width="wrap_content"
+     <com.google.android.material.button.MaterialButton
+          android:layout_width="300dp"
           android:layout_height="wrap_content"
-          android:layout_marginBottom="83dp"
-          android:layout_marginEnd="7dp"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp"
+          android:padding="9dp"
+          android:text="点击发送通知"
+          android:textSize="23sp"
+          app:layout_constraintTop_toBottomOf="@+id/ti_TextInputLayout"
+          app:layout_constraintBottom_toTopOf="@+id/kk_TextInputLayout"
           app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintBottom_toBottomOf="parent"
-          android:id="@+id/android_Button"
-          android:src="@drawable/ic_xyn_telegram" />
+          app:layout_constraintStart_toStartOf="parent"
+          android:id="@+id/android_Button" />
+
+     <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/kk_TextInputLayout"
+       android:layout_marginTop="3dp"
+       android:layout_marginBottom="3dp"
+       app:layout_constraintTop_toBottomOf="@+id/android_Button"
+       app:layout_constraintBottom_toTopOf="@+id/kk_Button"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:hint="请输入需要删除的通知渠道ID">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/kk_TextInputEditText"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</com.google.android.material.textfield.TextInputLayout>
+
+     <com.google.android.material.button.MaterialButton
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp"
+          android:padding="9dp"
+          android:text="点击删除通知渠道"
+          android:textSize="23sp"
+          app:layout_constraintTop_toBottomOf="@+id/kk_TextInputLayout"
+          app:layout_constraintBottom_toTopOf="@+id/output_TextView"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:id="@+id/kk_Button" />
+          
+     <TextView
+        android:id="@+id/output_TextView"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kk_Button" />
         
-     
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
